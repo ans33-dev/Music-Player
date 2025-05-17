@@ -1,0 +1,348 @@
+    :root {
+        --bg-main: linear-gradient(135deg, #1DB954, #191414);
+        --bg-dark: #121212;
+        --bg-light: #ffffff;
+        --text-light: #ffffff;
+        --text-dark: #000000;
+    }
+
+    [data-theme="dark"] {
+        --bg-main: linear-gradient(135deg, #1DB954, #191414);
+        --bg-dark: #121212;
+        --text-light: #ffffff;
+        --text-dark: #ffffff;
+    }
+
+    [data-theme="light"] {
+        --bg-main: linear-gradient(135deg, #ffffff, #eeeeee);
+        --bg-dark: #f5f5f5;
+        --text-light: #000000;
+        --text-dark: #000000;
+    }
+
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    .flex {
+        display: flex;
+    }
+
+    .spo {
+        filter: invert(1);
+        width: 60px;
+        height: 60px;
+    }
+
+    .h1 {
+        padding: 10px;
+    }
+
+    .immg {
+        width: 20px;
+    }
+
+    body {
+        font-family: 'Inter', sans-serif;
+        background: var(--bg-main);
+        color: var(--text-light);
+        transition: all 0.3s ease;
+        overflow-x: hidden;
+    }
+
+    header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1.5rem 3rem;
+        background-color: rgba(25, 20, 20, 0.8);
+        backdrop-filter: blur(10px);
+        position: sticky;
+        top: 0;
+        z-index: 1000;
+    }
+
+    header h1 {
+        font-size: 1.8rem;
+        font-weight: 700;
+    }
+
+    nav a {
+        margin-left: 1.5rem;
+        text-decoration: none;
+        color: var(--text-light);
+        font-weight: 600;
+        transition: color 0.3s;
+    }
+
+    nav a:hover {
+        color: #1DB954;
+    }
+
+    .toggle-theme {
+        background-color: #1DB954;
+        border: none;
+        color: white;
+        padding: 0.5rem 1rem;
+        border-radius: 5px;
+        cursor: pointer;
+        font-weight: bold;
+        margin-left: 2rem;
+    }
+
+    .hero {
+        font-family: "Exile", system-ui;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 6rem 2rem;
+        background: var(--bg-main);
+        animation: fadeIn 2s ease-in-out;
+    }
+
+    .hero h2 {
+        font-size: 3rem;
+        margin-bottom: 1rem;
+        animation: slideUp 1s ease-in-out;
+    }
+
+    .hero p {
+        font-size: 1.25rem;
+        max-width: 600px;
+        animation: slideUp 1.5s ease-in-out;
+    }
+
+    .playlist-section {
+        padding: 3rem;
+    }
+
+    .playlist-grid {
+        padding-bottom: 30px;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        gap: 2rem;
+    }
+
+    .card {
+        background: #00e5ff4b;
+        border-radius: 1rem;
+        padding: 1rem;
+        transition: transform 0.3s, box-shadow 0.3s;
+        cursor: pointer;
+    }
+
+    .ig {
+        height: 300px;
+    }
+
+    .card:hover {
+        transform: scale(1.05);
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+    }
+
+    .card img {
+        width: 100%;
+        border-radius: 0.75rem;
+    }
+
+    .card h3 {
+        margin-top: 1rem;
+        font-size: 1.1rem;
+    }
+
+    .audio-player {
+        text-align: center;
+        padding: 2rem;
+    }
+
+    audio {
+        width: 80%;
+        max-width: 500px;
+        margin-top: 1rem;
+    }
+
+    footer {
+        padding: 2rem;
+        text-align: center;
+        background-color: var(--bg-dark);
+        color: #bbb;
+    }
+
+    .playbar {
+        border-radius: 100px;
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        background: #6c6b6da4;
+        color: white;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1rem 2rem;
+        box-shadow: 0 -4px 20px rgba(0, 0, 0, 0.4);
+        z-index: 1000;
+        flex-wrap: wrap;
+        gap: 1rem;
+    }
+
+
+    .track-info {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+    }
+
+    .track-info img {
+        width: 50px;
+        height: 50px;
+        border-radius: 8px;
+    }
+
+    .track-info h4 {
+        font-size: 1rem;
+        margin: 0;
+    }
+
+    .track-info p {
+        font-size: 0.875rem;
+        color: #aaa;
+        margin: 0;
+    }
+
+    .controls {
+        display: flex;
+        gap: 1rem;
+    }
+
+    .controls button {
+        background: none;
+        border: none;
+        color: white;
+        font-size: 1.25rem;
+        cursor: pointer;
+    }
+
+    .play-pause {
+        font-size: 1.5rem;
+    }
+
+    .progress-container {
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+        flex: 1;
+        min-width: 200px;
+    }
+
+    .progress-bar {
+        flex: 1;
+        height: 6px;
+        background: #444;
+        border-radius: 3px;
+        overflow: hidden;
+        position: relative;
+    }
+
+    .progress {
+        width: 0%;
+        height: 100%;
+        background: #1DB954;
+    }
+
+    footer {
+        background-color: #181818;
+        color: #ffffff;
+        padding: 20px;
+        text-align: center;
+        font-family: Arial, sans-serif;
+    }
+
+    .footer-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        max-width: 1000px;
+        margin: auto;
+    }
+
+    .footer-section {
+        flex: 1;
+        min-width: 200px;
+    }
+
+    .footer-section h4 {
+        margin-bottom: 10px;
+        font-size: 18px;
+        color: #ffcc00;
+    }
+
+    .footer-section ul {
+        list-style: none;
+        padding: 0;
+    }
+
+    .footer-section ul li {
+        margin-bottom: 8px;
+    }
+
+    .footer-section ul li a {
+        color: #ffffff;
+        text-decoration: none;
+        transition: 0.3s;
+    }
+
+    .footer-section ul li a:hover {
+        color: #ffcc00;
+    }
+
+    .footer-bottom {
+        margin-top: 20px;
+        font-size: 14px;
+        border-top: 1px solid #555;
+        padding-top: 10px;
+    }
+
+    @import url('https://fonts.googleapis.com/css2?family=Exile&display=swap');
+
+    @media (max-width: 600px) {
+        .footer-container {
+            flex-direction: column;
+            text-align: center;
+        }
+    }
+
+    @keyframes fadeIn {
+        from {
+            opacity: 0;
+        }
+
+        to {
+            opacity: 1;
+        }
+    }
+
+    @keyframes slideUp {
+        from {
+            transform: translateY(50px);
+            opacity: 0;
+        }
+
+        to {
+            transform: translateY(0);
+            opacity: 1;
+        }
+    }
+
+    @media (max-width: 768px) {
+        .hero h2 {
+            font-size: 2.2rem;
+        }
+
+        .hero p {
+            font-size: 1rem;
+        }
+    }

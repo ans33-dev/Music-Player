@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Anshumanify</title>
+    <link href="https://fonts.googleapis.com/css2?family=Exile&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="cs.css">
+</head>
+
+<body oncontextmenu="return false" data-theme="dark">
+    <header>
+        <div class="flex">
+            <img class="spo"
+                src="Simple_Network_and_Hacker_Logo___DesignEvo_Logo_Maker_and_4_more_pages_-_Person_1_-_Microsoft__Edge_Beta_15-05-2025_07_54_27_edited-removebg-preview-Photoroom.png"
+                alt="">
+            <h1 class="h1">Anshumanify</h1>
+        </div>
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">Browse</a>
+            <a href="#">Library</a>
+            <a href="#">Profile</a>
+            <button class="toggle-theme" onclick="toggleTheme()">
+                <img class="immg" src="toggleon.svg" alt="">
+                Dark Mode
+            </button>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <h2>Feel The Music</h2>
+    </section>
+
+    <section class="playlist-section">
+        <h2 style="text-align:center; margin-bottom:2rem;">Featured Songs</h2>
+        <div class="playlist-grid">
+            <div class="card">
+                <audio src="music/eternxlkz-jujalarim-funk.mp3" onclick="autoplay()"></audio>
+                <img src="https://c.saavncdn.com/003/JUJALARIM-FUNK-Portuguese-2023-20231010221045-500x500.jpg"
+                    alt="Song 1" />
+                <h3>Jujalarim</h3>
+            </div>
+            <div class="card">
+                <audio src="music/ogryzek-empire.mp3" onclick="autoplay()"></audio>
+                <img src="https://c.saavncdn.com/328/EMPIRE-English-2024-20240725201656-500x500.jpg" alt="Song 2" />
+                <h3>Empire</h3>
+            </div>
+            <div class="card">
+                <audio src="music/Ogryzek - AURA.mp3" onclick="autoplay()"></audio>
+                <img src="https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/0e/70/60/0e706026-4dd0-910d-ae00-761aeebd07e0/197342680257_cover.jpg/1200x1200bf-60.jpg"
+                    alt="Song 3" />
+                <h3>Aura</h3>
+            </div>
+            <div class="card">
+                <audio src="music/ATLXS - PASSO BEM SOLTO (SLOWED).mp3" onclick="autoplay()"></audio>
+                <img src="https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/6a/1c/c1/6a1cc17f-beee-1a4d-cc94-c31f0cb1d250/artwork.jpg/800x800cc.jpg"
+                    alt="Song 4" />
+                <h3>Passo Bem Solto</h3>
+            </div>
+        </div>
+        <div class="playlist-grid">
+            <div class="card">
+                <audio src="music/5 Seconds of Summer - Teeth (Lyrics) [GLvoxKPNFbo].mp3" onclick="autoplay()"></audio>
+                <img src="https://c.saavncdn.com/710/CALM-PLUS1--English-2020-20200828053759-500x500.jpg"
+                    alt="Song 1" />
+                <h3>Teeth</h3>
+            </div>
+            <div class="card">
+                <audio src="music/Sabrina Carpenter - Espresso.mp3" onclick="autoplay()"></audio>
+                <img src="https://c.saavncdn.com/111/Espresso-English-2024-20240412064803-500x500.jpg" alt="Song 2" />
+                <h3>Espresso</h3>
+            </div>
+            <div class="card">
+                <audio src="music/Ogryzek - GLORY.mp3" onclick="autoplay()"></audio>
+                <img src="https://c.saavncdn.com/461/GLORY-English-2024-20240520233431-500x500.jpg" alt="Song 3" />
+                <h3>Glory</h3>
+            </div>
+            <div class="card">
+                <audio src="music/Sia - Unstoppable (Lyrics) [jJvDnYdD8JQ].mp3" onclick="autoplay()"></audio>
+                <img src="https://c.saavncdn.com/552/Unstoppable-English-2016-500x500.jpg" alt="Song 4" />
+                <h3>Unstoppable</h3>
+            </div>
+        </div>
+        <div class="playlist-grid">
+            <div class="card">
+                <audio src="music/Lukas Graham - 7 Years.mp3" onclick="autoplay()"></audio>
+                <img src="https://c.saavncdn.com/496/Lukas-Graham-English-2016-20190607043917-500x500.jpg"
+                    alt="Song 1" />
+                <h3>7 Years</h3>
+            </div>
+            <div class="card">
+                <audio src="music/harry potter theme.mp3" onclick="autoplay()"></audio>
+                <img src="https://c.saavncdn.com/340/Harry-Potter-Theme-English-2017-20180525004130-500x500.jpg"
+                    alt="Song 2" />
+                <h3>Harry Potter</h3>
+            </div>
+            <div class="card">
+                <audio src="music/matushka ultrafunk.mp3" onclick="autoplay() "></audio>
+                <img src="https://c.saavncdn.com/387/MATUSHKA-Russian-2025-20250316205759-500x500.jpg" alt="Song 3" />
+                <h3>Matushka UltraPhonk</h3>
+            </div>
+            <div class="card">
+                <audio src="music/Otnicka - Peaky Blinder.mp3" onclick="autoplay()"></audio>
+                <img src="https://c.saavncdn.com/982/Peaky-Blinder-English-2021-20211012220246-500x500.jpg"
+                    alt="Song 4" />
+                <h3>Peaky Blinder</h3>
+            </div>
+        </div>
+        <div class="playlist-grid">
+            <div class="card">
+                <audio src="music/DIOR - Положение _ Polozhenie (T3NZU Remix) _ TikTok REMIX-yt.savetube.me.mp3"
+                    onclick="autoplay()"></audio>
+                <img src="https://th.bing.com/th/id/OIP.LYYUE7qezd1xEKN66kcYLwHaHa?rs=1&pid=ImgDetMain-500x500"
+                    alt="Song 1" />
+                <h3>Polozhenie</h3>
+            </div>
+            <div class="card">
+                <audio src="music/Imagine Dragons - Believer (Lyrics)-yt.savetube.me.mp3" onclick="autoplay()"></audio>
+                <img src="https://th.bing.com/th/id/OIP.UvBN3gZgXE_Pm1zHhy6FcQHaHa?w=1080&h=1080&rs=1&pid=ImgDetMain-500x500"
+                    alt="Song 2" />
+                <h3>Believer</h3>
+            </div>
+            <div class="card">
+                <audio src="music/NEONI - Darkside (Lyrics)-yt.savetube.me.mp3" onclick="autoplay() "></audio>
+                <img class="ig"
+                    src="https://th.bing.com/th/id/OIP.9_460SRHiUXxcCU5dI-hUAHaEK?w=320&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7-500x1000"
+                    alt="Song 3" />
+                <h3>Darkside</h3>
+            </div>
+            <div class="card">
+                <audio src="music/Ellie Goulding - Love Me Like You Do (Lyrics)-yt.savetube.me.mp3"
+                    onclick="autoplay()"></audio>
+                <img class="ig"
+                    src="https://th.bing.com/th/id/OIP._dCLmGrlGUrdKLSWE5gmjwHaEK?w=295&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7ImgDetMain-500x500"
+                    alt="Song 4" />
+                <h3>love Me Like You Do</h3>
+            </div>
+        </div>
+    </section>
+
+    <section class="audio-player">
+        <div class="playbar">
+            <div class="track-info">
+                <img src="https://th.bing.com/th/id/R.4b8937d38477889ff2d131cb02c950ac?rik=6kUoQFlQ%2beGdnQ&riu=http%3a%2f%2fthecleverheart.com%2fwp-content%2fuploads%2f2023%2f02%2fMUSIC-black-app-icon.png&ehk=aMgCLAG%2biSubd0tgci7N4yyCdGPus5Vp7g8MI%2fnUvH0%3d&risl=&pid=ImgRaw&r=0"
+                    alt="track cover">
+                <div>
+                    <h4>Track Title</h4>
+                    <p>Artist Name</p>
+                </div>
+            </div>
+            <div class="controls">
+                <button>&laquo;</button>
+                <button class="play-pause">▶</button>
+                <button>&raquo;</button>
+            </div>
+            <div class="progress-container">
+                <span>0:00</span>
+                <div class="progress-bar">
+                    <div class="progress"></div>
+                </div>
+                <span>0:00</span>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="footer-container">
+            <div class="footer-section">
+                <h4>About</h4>
+                <ul>
+                    <li><a href="#">My Music Collection</a></li>
+                    <li><a href="#">Blog & Updates</a></li>
+                    <li><a href="#">Contact Me</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-section">
+                <h4>Legal</h4>
+                <ul>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Terms of Use</a></li>
+                    <li><a href="#">Copyright Info</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-section">
+                <h4>Connect</h4>
+                <ul>
+                    <li><a href="#">Instagram</a></li>
+                    <li><a href="#">YouTube</a></li>
+                    <li><a href="#">Twitter</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+    <script src="java.js" defer></script>
+</body>
+
+</html>
